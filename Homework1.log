@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.23)  25 JAN 2019 10:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.23)  25 JAN 2019 11:09
 entering extended mode
 **./Homework1.tex
 (Homework1.tex
@@ -459,31 +459,36 @@ G,.JBIG2,.JB2,.eps]
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
+<./figures/H1a.png, id=1, 735.49782pt x 675.27281pt>
+File: ./figures/H1a.png Graphic file (type png)
+<use ./figures/H1a.png>
+Package pdftex.def Info: ./figures/H1a.png  used on input line 88.
+(pdftex.def)             Requested size: 418.25368pt x 384.01308pt.
  [1
 
-{C:/Users/lgdillin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] (Hom
-ework1.aux) ) 
+{C:/Users/lgdillin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2 <./fi
+gures/H1a.png>] (Homework1.aux) ) 
 Here is how much of TeX's memory you used:
- 5088 strings out of 492946
- 79726 string characters out of 3124934
- 158954 words of memory out of 3000000
- 8915 multiletter control sequences out of 15000+200000
+ 5098 strings out of 492946
+ 79886 string characters out of 3124934
+ 158953 words of memory out of 3000000
+ 8922 multiletter control sequences out of 15000+200000
  9917 words of font info for 36 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,10n,43p,292b,196s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/lgdillin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmmi10.pfb><C:/Users/lgdillin/AppData/Local/Programs/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/lgdillin/AppData/Local/P
-rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/lgdillin/
-AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/
-Users/lgdillin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmr12.pfb><C:/Users/lgdillin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmr17.pfb><C:/Users/lgdillin/AppData/Local/Programs/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/lgdillin/AppData/Local/Prog
-rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Homework1.pdf (2 pages, 91960 bytes).
+ 42i,10n,43p,292b,279s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/lgdillin/AppData/Local/Programs/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/lgdillin/AppData/Loc
+al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/lgdi
+llin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+><C:/Users/lgdillin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmr10.pfb><C:/Users/lgdillin/AppData/Local/Programs/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmr12.pfb><C:/Users/lgdillin/AppData/Local/Programs/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/lgdillin/AppData/Local/
+Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/lgdilli
+n/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on Homework1.pdf (2 pages, 654688 bytes).
 PDF statistics:
- 41 PDF objects out of 1000 (max. 8388607)
+ 42 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
