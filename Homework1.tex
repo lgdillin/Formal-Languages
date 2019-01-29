@@ -118,7 +118,14 @@ Give DFA's accepting the following lagnuages over the alphabet $\{0,1\}$.
 
 \section{Problem 2.2.7}
 Let $A$ be a DFA and $q$ a particular state of $A$, such that $\delta(q,a)=q$ for all input symbols $a$. 
-Show by induction on the length of the input that for all input strings $w$, $\hat{\delta}(q,w)=q$.
+Show by induction on the length of the input that for all input strings $w$, $\hat{\delta}(q,w)=q$. \\
+\noindent\rule{2cm}{0.4pt} \\
+
+\textbf{\textit{Proof:}} \\
+\textbf{\textit{basis:}} Suppose $a = \epsilon$. Then, $\delta(q,\epsilon)=q$ as a result of no inputs being taken. \\
+\textbf{\textit{hypothesis:}}Since for any input symbol $a$,  $\delta(q,a)=q$, then any string of input symbols, $a_1, a_2, ... , a_n$, $\delta(q,a_i)=q$.\\
+Let $w$ be a string of input symbols, and $b$ is the last symbol in the string $w$. Then $\delta(q,b)=q$.
+
 
 \section{Problem 2.2.8}
 Let $A$ be a DFA and $a$ a particular input symbol of $A$, such that for all states $q$ of $A$ we have $\delta(q,a)=q$.
