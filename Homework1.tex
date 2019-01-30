@@ -87,7 +87,7 @@ Give DFA's accepting the following languages over the alphabet $\{0,1\}$:
 \begin{figure}[!htbp]
   	\centering
    	\begin{subfigure}[p]{0.5\linewidth}
-    	\includegraphics[width=\linewidth]{./figures/H1a.png}
+    	\includegraphics[width=\linewidth]{./figures/H1-1a.png}
    	\end{subfigure}
 \end{figure} 
 \newpage
@@ -95,43 +95,82 @@ Give DFA's accepting the following languages over the alphabet $\{0,1\}$:
 \begin{figure}[!htbp]
   	\centering
    	\begin{subfigure}[p]{1.1\linewidth}
-    	\includegraphics[width=\linewidth]{./figures/H1b.png}
+    	\includegraphics[width=\linewidth]{./figures/H1-1b.png}
    	\end{subfigure}
 \end{figure} 
 \subsection{c). The set of strings with 011 as a substring}
 \begin{figure}[!htbp]
   	\centering
    	\begin{subfigure}[p]{0.6\linewidth}
-    	\includegraphics[width=\linewidth]{./figures/H1c.png}
+    	\includegraphics[width=\linewidth]{./figures/H1-1c.jpg}
    	\end{subfigure}
 \end{figure} 
 \newpage
 \section{Problem 2.2.5}
 Give DFA's accepting the following lagnuages over the alphabet $\{0,1\}$.
 \subsection{a). The set of all strings such that each block of five consecutive symbols contains at least two 0's.}
+\begin{figure}[!htbp]
+  	\centering
+   	\begin{subfigure}[p]{0.8\linewidth}
+    	\includegraphics[width=\linewidth]{./figures/H1-2a.jpg}
+   	\end{subfigure}
+\end{figure} 
 
 \subsection{b). The set of all strings whose tenth symbol from the right end is a 1.}
-
+\begin{figure}[!htbp]
+  	\centering
+   	\begin{subfigure}[p]{0.9\linewidth}
+    	\includegraphics[width=\linewidth]{./figures/H1-2b.jpg}
+   	\end{subfigure}
+\end{figure} 
 \subsection{c). The set of strings that either begin or end (or both) with $01$.}
-
+\begin{figure}[!htbp]
+  	\centering
+   	\begin{subfigure}[p]{0.6\linewidth}
+    	\includegraphics[width=\linewidth]{./figures/H1-2c.jpg}
+   	\end{subfigure}
+\end{figure} 
 \subsection{d). The set of strings such that the number of 0's is divisible by five, and the number of 1's is divisible by 3.}
-
+\begin{figure}[!htbp]
+  	\centering
+   	\begin{subfigure}[p]{0.8\linewidth}
+    	\includegraphics[width=\linewidth]{./figures/H1-2d.jpg}
+   	\end{subfigure}
+\end{figure} 
 \section{Problem 2.2.7}
 Let $A$ be a DFA and $q$ a particular state of $A$, such that $\delta(q,a)=q$ for all input symbols $a$. 
 Show by induction on the length of the input that for all input strings $w$, $\hat{\delta}(q,w)=q$. \\
 \noindent\rule{2cm}{0.4pt} \\
 
-\textbf{\textit{Proof:}} \\
 \textbf{\textit{basis:}} Suppose $a = \epsilon$. Then, $\delta(q,\epsilon)=q$ as a result of no inputs being taken. \\
-\textbf{\textit{hypothesis:}}Since for any input symbol $a$,  $\delta(q,a)=q$, then any string of input symbols, $a_1, a_2, ... , a_n$, $\delta(q,a_i)=q$.\\
-Let $w$ be a string of input symbols, and $b$ is the last symbol in the string $w$. Then $\delta(q,b)=q$.
+\textbf{\textit{hypothesis:}} Suppose there is a string $w$ of length $k$ such that  $\hat{\delta}(q,w)=q$. \\
+
+\textbf{\textit{Proof:}} \\
+Suppose there is a word $v$ of length $k+1$, such that $v = wa$.  Since $\hat{\delta}(q,w)=q$, and $\delta(q,a)=q$, then $\delta(q,v)=\delta(\hat{\delta}(q,w), a)=q$. Thus $\hat{\delta}(q,w)=q$ for $w$ of any input length.
 
 
 \section{Problem 2.2.8}
 Let $A$ be a DFA and $a$ a particular input symbol of $A$, such that for all states $q$ of $A$ we have $\delta(q,a)=q$.
 
-\subsection{a). Show by induction on $n$ that for all $n\geq0$, $\delta(q,a^{n})=q$, where $a^{n}$ is the string consisting of $n$ $a$'s.}
+\subsection{a). Show by induction on $n$ that for all $n\geq0$, $\delta(q,a^{n})=q$, where $a^{n}$ is the string consisting of $n$ $a$'s.} 
+
+\textbf{\textit{basis:}} Suppose $n = 0$. Then, $a = \epsilon$. Thus $\delta(q,a^{0})=q$. \\
+\textbf{\textit{hypothesis:}} Then Assume $\delta(q,a^{n})=q$ for some $n > 0$ as well. Show that $\delta(q,a^{n+1})=q$. \\ 
+
+\textbf{\textit{Proof:}} \\
+Note that $a^{n+1} = a^{n}a$.  By extending the transition function, we have $\hat{\delta}(q,a^{n+1})=\delta(\hat{\delta}(q,a^{n}), a).$ \\
+Since $\hat{\delta}(q,a^{n}) = q$, then we have: $\hat{\delta}(q,a^{n+1})=\delta(q, a)=q$. Thus $\delta(q,a^{n})=q$ for all $n \geq 0$.
 
 \subsection{b). Show that if $x$ is a nonempty string in $L(A)$, then for all $k>0$, $x^{k}$ (i.e., $x$ written $k$ times is also in $L(A)$.)}
+
+This is not true for all cases. Consider the following DFA: \\
+\begin{figure}[!htbp]
+  	\centering
+   	\begin{subfigure}[p]{0.8\linewidth}
+    	\includegraphics[width=\linewidth]{./figures/H1-4.jpg}
+   	\end{subfigure}
+\end{figure} 
+
+It accepts the string: $"0111"$.  Yet for $k=2$, i.e. $"01110111"$ it fails to accept this string.  that is, if $x=0111$, Then it accepts $x$ for $k=1$, but not $k=2$. Thus, if $x$ is non-empty in $L(A)$, It does not necessarily hold that $x^{k}$ is also in $L(A)$ for all $k>0$.
 
 \end{document}
