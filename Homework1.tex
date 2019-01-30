@@ -161,16 +161,6 @@ Let $A$ be a DFA and $a$ a particular input symbol of $A$, such that for all sta
 Note that $a^{n+1} = a^{n}a$.  By extending the transition function, we have $\hat{\delta}(q,a^{n+1})=\delta(\hat{\delta}(q,a^{n}), a).$ \\
 Since $\hat{\delta}(q,a^{n}) = q$, then we have: $\hat{\delta}(q,a^{n+1})=\delta(q, a)=q$. Thus $\delta(q,a^{n})=q$ for all $n \geq 0$.
 
-\subsection{b). Show that if $x$ is a nonempty string in $L(A)$, then for all $k>0$, $x^{k}$ (i.e., $x$ written $k$ times is also in $L(A)$.)}
-
-This is not true for all cases. Consider the following DFA: \\
-\begin{figure}[!htbp]
-  	\centering
-   	\begin{subfigure}[p]{0.8\linewidth}
-    	\includegraphics[width=\linewidth]{./figures/H1-4.jpg}
-   	\end{subfigure}
-\end{figure} 
-
-It accepts the string: $"0111"$.  Yet for $k=2$, i.e. $"01110111"$ it fails to accept this string.  that is, if $x=0111$, Then it accepts $x$ for $k=1$, but not $k=2$. Thus, if $x$ is non-empty in $L(A)$, It does not necessarily hold that $x^{k}$ is also in $L(A)$ for all $k>0$.
+\subsection{b). Show that either $\{a\}^{*} \subseteq L(A)$ or $\{a\}^{*} \cap L(A) = \emptyset$ }
 
 \end{document}
