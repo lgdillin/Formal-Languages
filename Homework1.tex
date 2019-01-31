@@ -163,4 +163,8 @@ Since $\hat{\delta}(q,a^{n}) = q$, then we have: $\hat{\delta}(q,a^{n+1})=\delta
 
 \subsection{b). Show that either $\{a\}^{*} \subseteq L(A)$ or $\{a\}^{*} \cap L(A) = \emptyset$ }
 
+Note that $\{a\}^{*} = \{\, a  \,\, \lvert a^{k} ;  k \geq 0\,\}$, that is, $a \in \{a\}^{*}$ consists of the input symbol $a$ to some non-negative power. \\
+
+Suppose that $\{a\}^{*} \cap L(A) = \emptyset$ and $q \in F$.  However, since $\delta(q,a)=q$, then $a \in L(A)$.  Thus, we have a contradiction, and $\{a\}^{*} \cap L(A) \neq \emptyset$. It should be worth noting that this only holds true when $q$ is an acceptance state. if it is not, then $a$ is not in $L(A)$.  However, the problem doesn't clarify if $q$ is an accepting state.
+
 \end{document}
