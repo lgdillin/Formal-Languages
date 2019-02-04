@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.30)  4 FEB 2019 08:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.30)  4 FEB 2019 11:23
 entering extended mode
 **./Homework2.tex
 (Homework2.tex
@@ -463,44 +463,45 @@ Package caption Info: End \AtBeginDocument code.
 File: ./figures/HW2fig1.png Graphic file (type png)
 <use ./figures/HW2fig1.png>
 Package pdftex.def Info: ./figures/HW2fig1.png  used on input line 95.
-(pdftex.def)             Requested size: 125.47737pt x 85.32933pt.
+(pdftex.def)             Requested size: 104.56342pt x 71.10757pt.
+<./figures/h2-1.jpg, id=3, 4033.0675pt x 2178.1375pt>
+File: ./figures/h2-1.jpg Graphic file (type jpg)
+<use ./figures/h2-1.jpg>
+Package pdftex.def Info: ./figures/h2-1.jpg  used on input line 102.
+(pdftex.def)             Requested size: 460.08159pt x 248.46979pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--99
-
+Overfull \hbox (41.82791pt too wide) in paragraph at lines 101--104
+ []$[]$ 
  []
 
-<./figures/HW2fig2.png, id=3, 103.88812pt x 84.315pt>
+<./figures/HW2fig2.png, id=4, 103.88812pt x 84.315pt>
 File: ./figures/HW2fig2.png Graphic file (type png)
 <use ./figures/HW2fig2.png>
-Package pdftex.def Info: ./figures/HW2fig2.png  used on input line 107.
-(pdftex.def)             Requested size: 125.47737pt x 101.84132pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 103--111
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 114--116
-
- []
-
+Package pdftex.def Info: ./figures/HW2fig2.png  used on input line 112.
+(pdftex.def)             Requested size: 104.56342pt x 84.8667pt.
+<./figures/h2-2.jpg, id=5, 3168.83875pt x 2304.61pt>
+File: ./figures/h2-2.jpg Graphic file (type jpg)
+<use ./figures/h2-2.jpg>
+Package pdftex.def Info: ./figures/h2-2.jpg  used on input line 119.
+(pdftex.def)             Requested size: 397.3397pt x 288.95468pt.
 [1
 
 {C:/Users/lgdillin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./figure
-s/HW2fig1.png> <./figures/HW2fig2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 128--130
+s/HW2fig1.png> <./figures/h2-1.jpg>] [2 <./figures/HW2fig2.png> <./figures/h2-2
+.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 143--145
 
  []
 
-[2] (Homework2.aux) ) 
+[3] (Homework2.aux) ) 
 Here is how much of TeX's memory you used:
- 5107 strings out of 492946
- 80113 string characters out of 3124934
- 156945 words of memory out of 3000000
- 8930 multiletter control sequences out of 15000+200000
+ 5118 strings out of 492946
+ 80315 string characters out of 3124934
+ 157945 words of memory out of 3000000
+ 8938 multiletter control sequences out of 15000+200000
  9917 words of font info for 36 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,10n,43p,292b,387s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,10n,43p,297b,387s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/lgdillin/AppData/Local/Programs/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/lgdillin/AppData/Local/Programs/
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/lgdillin/AppData/
@@ -509,9 +510,9 @@ dillin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.p
 fb><C:/Users/lgdillin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmss12.pfb><C:/Users/lgdillin/AppData/Local/Programs/MiKTeX 2.9/fonts/t
 ype1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Homework2.pdf (2 pages, 75400 bytes).
+Output written on Homework2.pdf (3 pages, 2425942 bytes).
 PDF statistics:
- 38 PDF objects out of 1000 (max. 8388607)
+ 43 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
