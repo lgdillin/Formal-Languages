@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.30)  4 FEB 2019 11:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.30)  6 FEB 2019 12:17
 entering extended mode
 **./Homework2.tex
 (Homework2.tex
@@ -489,30 +489,46 @@ Package pdftex.def Info: ./figures/h2-2.jpg  used on input line 119.
 {C:/Users/lgdillin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./figure
 s/HW2fig1.png> <./figures/h2-1.jpg>] [2 <./figures/HW2fig2.png> <./figures/h2-2
 .jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 143--145
+<./figures/h2-3.jpg, id=19, 3771.08875pt x 1630.09pt>
+File: ./figures/h2-3.jpg Graphic file (type jpg)
+<use ./figures/h2-3.jpg>
+Package pdftex.def Info: ./figures/h2-3.jpg  used on input line 131.
+(pdftex.def)             Requested size: 376.42575pt x 162.69519pt.
+<./figures/h2-4.jpg, id=20, 4033.0675pt x 2529.45pt>
+File: ./figures/h2-4.jpg Graphic file (type jpg)
+<use ./figures/h2-4.jpg>
+Package pdftex.def Info: ./figures/h2-4.jpg  used on input line 138.
+(pdftex.def)             Requested size: 376.42575pt x 236.05466pt.
+<./figures/h2-5.jpg, id=21, 2616.77625pt x 2063.71pt>
+File: ./figures/h2-5.jpg Graphic file (type jpg)
+<use ./figures/h2-5.jpg>
+Package pdftex.def Info: ./figures/h2-5.jpg  used on input line 145.
+(pdftex.def)             Requested size: 292.77629pt x 230.88203pt.
+ [3 <./figures/h2-3.jpg> <./figures/h2-4.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 160--162
 
  []
 
-[3] (Homework2.aux) ) 
+[4 <./figures/h2-5.jpg>] (Homework2.aux) ) 
 Here is how much of TeX's memory you used:
- 5118 strings out of 492946
- 80315 string characters out of 3124934
- 157945 words of memory out of 3000000
- 8938 multiletter control sequences out of 15000+200000
+ 5133 strings out of 492946
+ 80612 string characters out of 3124934
+ 156945 words of memory out of 3000000
+ 8950 multiletter control sequences out of 15000+200000
  9917 words of font info for 36 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,10n,43p,297b,387s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/lgdillin/AppData/Local/Programs/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/lgdillin/AppData/Local/Programs/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/lgdillin/AppData/
-Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/lg
-dillin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.p
-fb><C:/Users/lgdillin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmss12.pfb><C:/Users/lgdillin/AppData/Local/Programs/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Homework2.pdf (3 pages, 2425942 bytes).
+<C:/Users/lgdillin/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/lgdillin/Ap
+pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Us
+ers/lgdillin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mr12.pfb><C:/Users/lgdillin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmr17.pfb><C:/Users/lgdillin/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/lgdillin/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on Homework2.pdf (4 pages, 5789320 bytes).
 PDF statistics:
- 43 PDF objects out of 1000 (max. 8388607)
+ 49 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
