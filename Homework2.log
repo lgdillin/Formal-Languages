@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.30)  7 FEB 2019 09:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.30)  7 FEB 2019 10:13
 entering extended mode
 **./Homework2.tex
 (Homework2.tex
@@ -522,11 +522,11 @@ File: ./figures/h2-8.jpg Graphic file (type jpg)
 Package pdftex.def Info: ./figures/h2-8.jpg  used on input line 172.
 (pdftex.def)             Requested size: 292.77629pt x 190.68736pt.
  [5 <./figures/h2-7.jpg> <./figures/h2-8.jpg>]
-<./figures/h2-9.jpg, id=36, 2373.86874pt x 2266.4675pt>
+<./figures/h2-9.jpg, id=36, 3398.6975pt x 1742.51pt>
 File: ./figures/h2-9.jpg Graphic file (type jpg)
 <use ./figures/h2-9.jpg>
 Package pdftex.def Info: ./figures/h2-9.jpg  used on input line 182.
-(pdftex.def)             Requested size: 292.77629pt x 279.50356pt.
+(pdftex.def)             Requested size: 292.77629pt x 150.09224pt.
  [6 <./figures/h2-9.jpg>] (Homework2.aux) ) 
 Here is how much of TeX's memory you used:
  5153 strings out of 492946
@@ -544,7 +544,7 @@ cmr12.pfb><C:/Users/lgdillin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmr17.pfb><C:/Users/lgdillin/AppData/Local/Programs/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/lgdillin/AppData/Local/Progr
 ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Homework2.pdf (6 pages, 8587570 bytes).
+Output written on Homework2.pdf (6 pages, 8587914 bytes).
 PDF statistics:
  59 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
