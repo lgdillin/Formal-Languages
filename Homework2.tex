@@ -98,11 +98,22 @@ Consider the following $\epsilon$-NFA
 
 
 \subsection{a) Compute the $\epsilon$-closure of each state}
+$ECLOSE(p) = \{p, q, r\}$. \\
+$ECLOSE(q) = \{p, q, r\}$. \\
+$ECLOSE(r) = \emptyset$.
 
 \subsection{b) Give all strings of length three or less accepted by the automaton}
+$\{ \epsilon, b, c, ab, cb, bb, bc, aab, bab, abb, cbb, bcb, ccb, cab, acb \}$.
 
 \subsection{c) Convert the automaton to an NFA}
+\begin{figure}[!htbp]
+  	\centering
+   	\begin{subfigure}[p]{0.4\linewidth}
+    	\includegraphics[width=\linewidth]{./figures/h3-1.jpg}
+   	\end{subfigure}
+\end{figure} 
 
+\newpage
 \section{Problem 3.1.1}
 Write regular expressions for the following languages:
 
