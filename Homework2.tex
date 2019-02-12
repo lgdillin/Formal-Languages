@@ -79,7 +79,7 @@
 
 %%% The "real" document content comes below...
 
-\title{Formal Languages Homework 2}
+\title{Formal Languages Homework 3}
 \author{Liam Dillingham}
 %\date{} % Activate to display a given date or no date (if empty),
          % otherwise the current date is printed 
@@ -87,100 +87,52 @@
 \begin{document}
 \maketitle
 
-\section{Problem 2.3.2}
-Convert to a DFA the following NFA: 
+\section{Problem 2.5.2}
+Consider the following $\epsilon$-NFA
 \begin{figure}[!htbp]
   	\centering
-   	\begin{subfigure}[p]{0.25\linewidth}
-    	\includegraphics[width=\linewidth]{./figures/HW2fig1.png}
+   	\begin{subfigure}[p]{0.4\linewidth}
+    	\includegraphics[width=\linewidth]{./figures/HW3fig1.png}
    	\end{subfigure}
-\end{figure} \\
-\noindent\rule{2cm}{0.4pt} \\
-\begin{figure}[!htbp]
-  	\centering
-   	\begin{subfigure}[p]{1.1\linewidth}
-    	\includegraphics[width=\linewidth]{./figures/h2-1.jpg}
-   	\end{subfigure}
-\end{figure}
+\end{figure} 
 
 
-\section{Problem 2.3.3}
-Convert the following NFA to a DFA and informally describe the language it accepts. 
-\begin{figure}[!htbp]
-  	\centering
-   	\begin{subfigure}[p]{0.25\linewidth}
-    	\includegraphics[width=\linewidth]{./figures/HW2fig2.png}
-   	\end{subfigure}
-\end{figure} \\
-\noindent\rule{2cm}{0.4pt} \\
-\begin{figure}[!htbp]
-  	\centering
-   	\begin{subfigure}[p]{0.95\linewidth}
-    	\includegraphics[width=\linewidth]{./figures/h2-2.jpg}
-   	\end{subfigure}
-\end{figure} \\
-The language accepted by the NFA/DFA is all strings ending in $00$, or $01$.
+\subsection{a) Compute the $\epsilon$-closure of each state}
 
-\newpage
-\section{Problem 2.3.4} 
-Give nondeterministic finite automata to accept the following languages. Try to take advantage of nondeterminism as much as possible
-\subsection{a). The set of strings over alphabet $\{0,1,...,9\}$ such that the final digit has appeared before}
-\begin{figure}[!htbp]
-  	\centering
-   	\begin{subfigure}[p]{0.9\linewidth}
-    	\includegraphics[width=\linewidth]{./figures/h2-3.jpg}
-   	\end{subfigure}
-\end{figure}
-\subsection{b). The set of strings over alphabet $\{0,1,...,9\}$ such that the final digit has not appeared before}
-\begin{figure}[!htbp]
-  	\centering
-   	\begin{subfigure}[p]{0.9\linewidth}
-    	\includegraphics[width=\linewidth]{./figures/h2-4.jpg}
-   	\end{subfigure}
-\end{figure}
-\subsection{c). The set of strings of 0's and 1's such that there are two 0's separated by a number of positions that is a multiple of 4. Note that 0 is an allowable multiple of 4}
-\begin{figure}[!htbp]
-  	\centering
-   	\begin{subfigure}[p]{0.7\linewidth}
-    	\includegraphics[width=\linewidth]{./figures/h2-5.jpg}
-   	\end{subfigure}
-\end{figure}
+\subsection{b) Give all strings of length three or less accepted by the automaton}
 
+\subsection{c) Convert the automaton to an NFA}
 
-\section{Problem 2.4.1}
-Design NFA's to recognize the following sets of strings:
+\section{Problem 3.1.1}
+Write regular expressions for the following languages:
 
-\subsection{a). $abc$, $abd$, and $aacd$, Assume the alphabet is $\{a,b,c,d\}$.}
-\begin{figure}[!htbp]
-  	\centering
-   	\begin{subfigure}[p]{0.7\linewidth}
-    	\includegraphics[width=\linewidth]{./figures/h2-6.jpg}
-   	\end{subfigure}
-\end{figure}
-\newpage
-\subsection{b). $0101$, $101$, and $011$.}
-\begin{figure}[!htbp]
-  	\centering
-   	\begin{subfigure}[p]{0.7\linewidth}
-    	\includegraphics[width=\linewidth]{./figures/h2-7.jpg}
-   	\end{subfigure}
-\end{figure}
-\subsection{c). $ab$, $bc$, and $ca$. Assume the alphabet is $\{a,b,c\}$. }
-\begin{figure}[!htbp]
-  	\centering
-   	\begin{subfigure}[p]{0.7\linewidth}
-    	\includegraphics[width=\linewidth]{./figures/h2-8.jpg}
-   	\end{subfigure}
-\end{figure}
-\newpage
-\section{Problem 2.4.2b}
-Convert each of your NFA's from Problem 2.4.1 to DFA's (We only complete part b here).
-\noindent\rule{2cm}{0.4pt} \\
-\begin{figure}[!htbp]
-  	\centering
-   	\begin{subfigure}[p]{0.7\linewidth}
-    	\includegraphics[width=\linewidth]{./figures/h2-9.jpg}
-   	\end{subfigure}
-\end{figure}
+\subsection{a) The set of strings over alphabet $\{a,b,c\}$ containing at least one $a$ and at least one $b$}
+
+\subsection{b) The set of $0$'s and $1$'s whose tenth symbol from the right end is $1$}
+
+\subsection{c) The set of strings of $0$'s and $1$'s with at most one pair of consecutive $1$'s}
+
+\section{Problem 3.1.2}
+Write regular expressions for the following languages:
+
+\subsection{a) The set of all strings of $0$'s and $1$'s such that every pair of adjacent $0$'s appears before any pair of adjacent $1$'s}
+
+\subsection{b) The set of strings of $0$'s and $1$'s whose number of $0$'s is divisible by five}
+
+\section{Problem 3.1.4}
+Give English descriptions of the languages of the following regular expressions:
+
+\subsection{a) $(1 + \epsilon)(00^{*}1)^{*}0^{*}$.}
+
+\subsection{b) $(0^{*}1^{*})^{*}000(0+1)^{*}$.}
+
+\subsection{c) $(0+10)^{*}1^{*}$.}
+
 
 \end{document}
+
+
+
+
+
+
