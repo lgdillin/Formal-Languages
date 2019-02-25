@@ -77,9 +77,20 @@
 % \mathcal{O} 
 %%% big O notation
 
+% \begin{table}
+% \caption{Forward slash.}
+% \[\begin{array}{c|ccccc} 
+% abc/def & 1 & 2 & 3 & 4 & 5\\
+% \hline
+% 1 & a & b & c & d & e\\
+% 2 & f & g & h & i & j\\
+% 3 & k & l & m & n & o\\
+% \end{array}\]
+% \end{table}
+
 %%% The "real" document content comes below...
 
-\title{Formal Languages Homework 3}
+\title{Formal Languages Homework 4}
 \author{Liam Dillingham}
 %\date{} % Activate to display a given date or no date (if empty),
          % otherwise the current date is printed 
@@ -87,65 +98,120 @@
 \begin{document}
 \maketitle
 
-\section{Problem 2.5.2}
-Consider the following $\epsilon$-NFA
+\section{Problem 3.2.2}
+Here is a transition table for a DFA:
 \begin{figure}[!htbp]
   	\centering
-   	\begin{subfigure}[p]{0.4\linewidth}
-    	\includegraphics[width=\linewidth]{./figures/HW3fig1.png}
+   	\begin{subfigure}[p]{0.25\linewidth}
+    	\includegraphics[width=\linewidth]{./figures/HW4fig1.png}
    	\end{subfigure}
 \end{figure} 
 
+% NOTE: For all answers to this question, I'm relabeling all states $q_i$ to their index, $i$.
 
-\subsection{a) Compute the $\epsilon$-closure of each state}
-$ECLOSE(p) = \{p, q, r\}$. \\
-$ECLOSE(q) = \{p, q, r\}$. \\
-$ECLOSE(r) = \emptyset$.
+\subsection{a) Give all the regular expressions $R_{ij}^{(0)}$. Note: Think of state $q_i$ as if it were the state with integer number $i$.}
 
-\subsection{b) Give all strings of length three or less accepted by the automaton}
-$\{ \epsilon, b, c, ab, cb, bb, bc, aab, bab, abb, cbb, bcb, ccb, cab, acb \}$.
+\begin{table}[!htbp]
+% \caption{Forward slash.}
+\[\begin{array}{c|ccc}
+R_{ij}^{(0)} & q_1 & q_2 & q_3 \\
+\hline
+\rightarrow q_1 & \epsilon & 0 & 1 \\
+q_2 & 0 & \epsilon & 1 \\
+^{*}q_3 & 1 & 0 & \epsilon \\
+\end{array}\]
+\end{table}
 
-\subsection{c) Convert the automaton to an NFA}
-\begin{figure}[!htbp]
-  	\centering
-   	\begin{subfigure}[p]{0.4\linewidth}
-    	\includegraphics[width=\linewidth]{./figures/h3-1.jpg}
-   	\end{subfigure}
-\end{figure} 
+\subsection{b) Give all the regular expressions $R_{ij}^{(1)}$. Try to simplify the expressions as much as possible}
+$R_{ij}^{(1)} = R_{ij}^{(0)} + R_{i1}^{(0)}(R_{11}^{(0)})^{*}R_{1j}^{(0)}$
+\begin{table}[!htbp]
+% \caption{Forward slash.}
+\[\begin{array}{c|ccc}
+R_{ij}^{(1)} & q_1 & q_2 & q_3 \\
+\hline
+\rightarrow q_1 & \epsilon & 0 & 1 \\
+q_2 & 0 & \epsilon + 00 & 1+01 \\
+^{*}q_3 & 1 & 0+00 & \epsilon+1 \\
+\end{array}\]
+\end{table}
 
 \newpage
-\section{Problem 3.1.1}
-Write regular expressions for the following languages:
+\subsection{c) Give all the regular expressions $R_{ij}^{(2)}$. Try to simplify the expressions as much as possible}
+$R_{ij}^{(2)} = R_{ij}^{(1)} + R_{i2}^{(1)}(R_{22}^{(1)})^{*}R_{2j}^{(1)}$
+\begin{table}[!htbp]
+% \caption{Forward slash.}
+\[\begin{array}{c|ccc}
+R_{ij}^{(1)} & q_1 & q_2 & q_3 \\
+\hline
+\rightarrow q_1 & \epsilon+0(\epsilon+00)^{*}0 & 0+0(\epsilon+00)^{*}(\epsilon+00) & 1+0(\epsilon+00)^{*}(1+01) \\
+q_2 & 0+(\epsilon+00)(\epsilon+00)^{*}0 & \epsilon+00+(\epsilon+00)(\epsilon+00)^{*}(\epsilon+00) & 1+01+(\epsilon+00)(\epsilon+00)^{*}(1+01) \\
+^{*}q_3 & \epsilon+1+(0+00)(\epsilon+00)^{*}0 & 0+00+(0+00)(\epsilon+00)^{*}(\epsilon+00) & \epsilon+1+(0+00)(\epsilon+00)^{*}(1+01) \\
+\end{array}\]
+\end{table}
 
-\subsection{a) The set of strings over alphabet $\{a,b,c\}$ containing at least one $a$ and at least one $b$}
-$(a+b+c)^{*}(a(a+b+c)^{*}b+b(a+b+c)^{*}a)(a+b+c)^{*}$
+\subsection{d) Give a regular expression for the language of the automaton}
 
-\subsection{b) The set of $0$'s and $1$'s whose tenth symbol from the right end is $1$}
-$(0+1)^{*}1 (0+1)(0+1)(0+1)(0+1)(0+1)(0+1)(0+1)(0+1)(0+1)(0+1)$
+I included my scratch work.
+\begin{figure}[!htbp]
+  	\centering
+   	\begin{subfigure}[p]{0.7\linewidth}
+    	\includegraphics[width=\linewidth]{./figures/h4-4.jpg}
+   	\end{subfigure}
+\end{figure} 
+final answer: $(01)^{*}1(11)^{*}(01)^{*}$.
 
-\subsection{c) The set of strings of $0$'s and $1$'s with at most one pair of consecutive $1$'s}
-$(0 + 10)^{*}1(0 + 10)^{*}$
+\newpage
+\section{Problem 3.2.3}
+Convert the following DFA to a regular expression, using the state-elimination technique of Section 3.2.2 
+\begin{figure}[!htbp]
+  	\centering
+   	\begin{subfigure}[p]{0.2\linewidth}
+    	\includegraphics[width=\linewidth]{./figures/HW4fig2.png}
+   	\end{subfigure}
+\end{figure} \\
+\noindent\rule{2cm}{0.4pt} \\
 
-\section{Problem 3.1.2}
-Write regular expressions for the following languages:
+I wanted to include the scratchwork I used to calculate the regular expression:
+\begin{figure}[!htbp]
+  	\centering
+   	\begin{subfigure}[p]{0.7\linewidth}
+    	\includegraphics[width=\linewidth]{./figures/h4-1.jpg}
+   	\end{subfigure}
+\end{figure} \\
+Final Answer: \\ 
+$1^{*}+0((10^{*}1+0)1)^{*}(10^{*}1+0)0$
 
-\subsection{a) The set of all strings of $0$'s and $1$'s such that every pair of adjacent $0$'s appears before any pair of adjacent $1$'s}
-$(0 + 01)^{*}(1 + 01)^{*}$
+\newpage
+\section{Problem 3.2.4}
+Convert the following regular expressions to NFA's with $\epsilon$-transitions.
+\subsection{b) $(0+1)01$}
+\begin{figure}[!htbp]
+  	\centering
+   	\begin{subfigure}[p]{0.8\linewidth}
+    	\includegraphics[width=\linewidth]{./figures/h4-2.jpg}
+   	\end{subfigure}
+\end{figure}
+\subsection{c) $00(0+1)^{*}$}
+\begin{figure}[!htbp]
+  	\centering
+   	\begin{subfigure}[p]{0.8\linewidth}
+    	\includegraphics[width=\linewidth]{./figures/h4-3.jpg}
+   	\end{subfigure}
+\end{figure}
 
-\subsection{b) The set of strings of $0$'s and $1$'s whose number of $0$'s is divisible by five}
-$(1^{*}01^{*}01^{*}01^{*}01^{*}01^{*})^{*}$
+\newpage
+\section{Problem 3.4.1}
+Verify the following identities involving regular expressions.
+\subsection{b) $(R+S)+T=R+(S+T)$}
 
-\section{Problem 3.1.4}
-Give English descriptions of the languages of the following regular expressions:
+Let $r \in R, s \in S, t \in T$ be representative elements from their respective regular expressions. Starting on the left hand side, we have $r+s = \{r,s\}$. Then $\{r,s\}+t = \{r,s,t\}$. For the right hand side, we have $s+t = \{s,t\}$, and then $r+\{s,t\}=\{r,s,t\}$. Thus the two sides are equal.
 
-\subsection{a) $(1 + \epsilon)(00^{*}1)^{*}0^{*}$.}
-Set of strings that have no consecutive 1's.
+\subsection{c) $(RS)T=R(ST)$}
+Let $r \in R, s \in S, t \in T$ be representative elements from their respective regular expressions. $rs$ produces the set $\{rs\}$, with $t$ gives us $\{rst\}$.  Similarly, $st$ gives us $\{st\}$, and with $r$ we have $\{rst\}$.  Both sides are equal.
 
-\subsection{b) $(0^{*}1^{*})^{*}000(0+1)^{*}$.}
-Set of strings with at least 3 consecutive 0's.
+\subsection{h) $(R^{*}S^{*})^{*}=(R+S)^{*}$}
+Let $r \in R, s \in S$ be representative elements from their respective regular expressions.  Note on the right hand side, we have the set $\{r,s\}$.  Then to compute the kleene closure, we pick an element from this set and append it to our word.  We get a set like this: $\{\epsilon, r, s, rs, sr, ssr, rrs, srs, rsr, rrr, ..\}$. That is, every combination of $s$'s and $r$'s for any length. For the right hand side, we have $R^{*} = \{\epsilon, r, rr, rrr, ...\}$, and $S^{*} = \{\epsilon, s, ss, sss, ...\}$. Then we compute the closure of the concatenation of these two sets. Then we dot these two sets together, giving us a set with an arbitrary number of $r$'s on the left, and $s$'s on the right.  With this, we compute the kleene closure, where we pick an arbitrary number of elements from our set and concatenate them.  To prove this simply, note that both $r$ and $s$ are in this set, that is $\{r,s\} \subset R^{*}S^{*}$. Then, by simply selecting from this small subset, we can build a string of arbitrary length of any combination of $s$'s and $r$'s.  Thus, the two sets are equal.
 
-\subsection{c) $(0+10)^{*}1^{*}$.}
-The set of strings such that there are no consecutive 1's.
 
 \end{document}
 
