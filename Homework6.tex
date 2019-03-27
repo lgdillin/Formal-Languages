@@ -205,6 +205,16 @@ Design a regular grammar without using a variable goes to $\epsilon$ rule $(A \r
 \section{Problem 2}
 Design context-free grammars for the following languages
 \subsection{1). $L = \{ a^{n}b^{m}c^{2n+m} \mid n,m > 0\}$ where $\Sigma = \{a,b,c\}$}
+
+ \begin{table}[!htbp]
+ \[\begin{array}{ccc} 
+&  \\
+ S & \rightarrow & A \\
+ A & \rightarrow & aABcc \mid \epsilon \\
+ B & \rightarrow & bBc \mid \epsilon
+ \end{array}\]
+ \end{table}
+
 \subsection{2). $L = \{a^{n}b^{m}c^{i} \mid m > n + i$ and $m,n,i \geq 0\}$, where $\Sigma = {a,b,c}$}
 \subsection{3). $L = \{a^{m}b^{n} \mid 0 \leq n \leq m \leq 3n\}$, where $\Sigma = \{a,b\}$}
 
@@ -219,8 +229,21 @@ Let $G$ be the grammar
  \end{array}\]
  \end{table}
 \subsection{1). Give a leftmost derivation of aaabb}
+$S \Rightarrow ASB \Rightarrow aASB \Rightarrow aaASB \Rightarrow aa\epsilon SB \Rightarrow aaabB \Rightarrow aaabbB \Rightarrow aaabb\epsilon \Rightarrow aaabb$
 \subsection{2). Give a rightmost derivation of aaabb}
+$S \Rightarrow ASB \Rightarrow ASbB \Rightarrow ASb\epsilon \Rightarrow Aabb \Rightarrow aAabb \Rightarrow aaAabb \Rightarrow aa\epsilon abb \Rightarrow aaabbb$
 \subsection{3). Show that G is ambiguous}
+We can show that G is ambiguous by showing that there are two distinct leftmost derivations for a given string (ex. $aaabb$).  \\
+
+
+
+$S \Rightarrow ASB \Rightarrow aASB \Rightarrow aaASB \Rightarrow aa\epsilon SB \Rightarrow aaabB \Rightarrow aaabbB \Rightarrow aaabb\epsilon \Rightarrow aaabb$. \\
+
+
+$S \Rightarrow ASB \Rightarrow aASB \Rightarrow aaASB \Rightarrow aa\epsilon SB \Rightarrow aaASBB \Rightarrow aa\epsilon SBB \Rightarrow aaabBB \Rightarrow aaabbBB \Rightarrow aaabb\epsilon \epsilon \Rightarrow aaabb.$ \\
+
+Thus G is ambiguous
+
 \subsection{4). Construct an unambiguous grammar equivalent to G}.
 
 \end{document}
