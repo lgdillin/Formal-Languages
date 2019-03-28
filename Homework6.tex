@@ -121,7 +121,7 @@ $T = \{0, 1\}$\\
  \begin{table}[!htbp]
  \[\begin{array}{ccc} 
 &  \\
- S & \rightarrow & 0S11 \mid 0A11 \mid \\
+ S & \rightarrow & 0S11 \mid 0A11 \\
  A & \rightarrow & \epsilon \\
  \end{array}\]
  \end{table}
@@ -191,10 +191,29 @@ For the grammar and each of the strings in Exercise 5.1.2, give parse trees.
 \section{Problem 5.4.5}
 This question concerns the grammar from Exercise 5.1.2
 \subsection{a). Show that this grammar is unambiguous}
+\textit{Base case}: The shortest string we can make. since $S \rightarrow A1B$, and it is possible such that $A \rightarrow \epsilon$ and $ B \rightarrow \epsilon$, then the smallest $w$ is $|w| = 1$.  And there is only one derivation for this. \\
+\textit{Inductive Hypothesis}:  Assume that for all $w \in \{0,1\}^{*}$, with $|w| = n$, where $n \geq 1$, $w$ has at most 1 left-most derivation from $S,A,B$. \\
+\textit{Inductive Step}: Show that the hypothesis holds for $w$, $|w| = n+1$, $n \geq 1$. \\
+\textit{Case 1}: Show that for each $A \Rightarrow^{*} w$, there is aunique LM derivation $A \Rightarrow_{LM}^{*} w$. \\
+\textit{Proof}: Since $A \Rightarrow_{LM}^{*} w$, replace $A$ with string $y$. Then $|y| \leq n$ because $|w| = n+1$. Note that because $|y| = n$, that $y$ has a unique leftmost derivation from $A$.  Thus $A \Rightarrow_{LM}^{*} 0y = w$.  The same argument follows for $B$.  Since the hypothesis holds true for both $A$ and $B$, then certainly it holds true for $S$, since $S \rightarrow A1B$.  Thus the grammar is unambiguous.
 
-
+\newpage
 \subsection{b). Find a grammar for the same language that \textit{is} ambiguous, and demonstrate its ambiguity}
+Let G:
+ \begin{table}[!htbp]
+ \[\begin{array}{ccc} 
+&  \\
+ S & \rightarrow & A1B \\
+ A & \rightarrow & 0A \mid 00A \mid \epsilon \\
+ B & \rightarrow & bBc \mid \epsilon
+ \end{array}\]
+ \end{table}
 
+Suppose we want to find the derivation for $0001$. We have two derivations:\\
+$ S \Rightarrow A1B \Rightarrow 0A1B \Rightarrow 00A1B \Rightarrow 000A1B \Rightarrow 000\epsilon 1B \Rightarrow 0001B \Rightarrow 0001\epsilon \Rightarrow 0001$. \\
+$ S \Rightarrow A1B \Rightarrow 00A1B \Rightarrow 000A1B \Rightarrow 000\epsilon 1B \Rightarrow 0001\epsilon \Rightarrow 0001$. \\
+
+Thus the grammar is ambiguous
 
 \noindent\rule{15cm}{0.4pt} \\
 Additional Exercises
@@ -202,22 +221,43 @@ Additional Exercises
 Design a regular grammar without using a variable goes to $\epsilon$ rule $(A \rightarrow \epsilon)$ for the set of binary strings beginning with 1, ending with 0, and having even number of 0's and even number of 1's.
  \noindent\rule{2cm}{0.4pt} \\
 
-\section{Problem 2}
-Design context-free grammars for the following languages
-\subsection{1). $L = \{ a^{n}b^{m}c^{2n+m} \mid n,m > 0\}$ where $\Sigma = \{a,b,c\}$}
-
  \begin{table}[!htbp]
  \[\begin{array}{ccc} 
 &  \\
- S & \rightarrow & A \\
+ S & \rightarrow & 1A0 \\
+ A & \rightarrow &  1 \\
+ \end{array}\]
+ \end{table}
+
+\section{Problem 2}
+Design context-free grammars for the following languages
+\subsection{1). $L = \{ a^{n}b^{m}c^{2n+m} \mid n,m > 0\}$ where $\Sigma = \{a,b,c\}$}
+ \begin{table}[!htbp]
+ \[\begin{array}{ccc} 
+&  \\
+ S & \rightarrow & aAbccc \\
  A & \rightarrow & aABcc \mid \epsilon \\
  B & \rightarrow & bBc \mid \epsilon
  \end{array}\]
  \end{table}
-
-\subsection{2). $L = \{a^{n}b^{m}c^{i} \mid m > n + i$ and $m,n,i \geq 0\}$, where $\Sigma = {a,b,c}$}
+\subsection{2). $L = \{a^{n}b^{m}c^{i} \mid m > n + i$ and $m,n,i \geq 0\}$, where $\Sigma = \{a,b,c\}$}
+ \begin{table}[!htbp]
+ \[\begin{array}{ccc} 
+&  \\
+ S & \rightarrow & aAbbBbCc \\
+ A & \rightarrow & aAb \mid \epsilon \\
+ B & \rightarrow & bBb \mid \epsilon \\
+ C & \rightarrow & bCc \mid \epsilon 
+ \end{array}\]
+ \end{table}
 \subsection{3). $L = \{a^{m}b^{n} \mid 0 \leq n \leq m \leq 3n\}$, where $\Sigma = \{a,b\}$}
-
+ \begin{table}[!htbp]
+ \[\begin{array}{ccc} 
+&  \\
+ S & \rightarrow & aaAb \\
+ A & \rightarrow & aaAb \mid \epsilon 
+ \end{array}\]
+ \end{table}
 \section{Problem 3}
 Let $G$ be the grammar
  \begin{table}[!htbp]
@@ -245,7 +285,14 @@ $S \Rightarrow ASB \Rightarrow aASB \Rightarrow aaASB \Rightarrow aa\epsilon SB 
 Thus G is ambiguous
 
 \subsection{4). Construct an unambiguous grammar equivalent to G}.
-
+ \begin{table}[!htbp]
+ \[\begin{array}{ccc} 
+&  \\
+ S & \rightarrow & AB \\
+ A & \rightarrow & aA \mid \epsilon \\
+ B & \rightarrow  & bB \mid \epsilon \\
+ \end{array}\]
+ \end{table}
 \end{document}
 
 
