@@ -58,6 +58,8 @@
 \renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
 \renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
 
+\usepackage{ amssymb }
+
 %%% graphics path
 
 
@@ -235,27 +237,30 @@ Design context-free grammars for the following languages
  \begin{table}[!htbp]
  \[\begin{array}{ccc} 
 &  \\
- S & \rightarrow & aAbccc \\
- A & \rightarrow & aABcc \mid \epsilon \\
+ S & \rightarrow & aAcc \\
+ A & \rightarrow & aAcc \mid bBc\\
  B & \rightarrow & bBc \mid \epsilon
  \end{array}\]
  \end{table}
+\newpage
 \subsection{2). $L = \{a^{n}b^{m}c^{i} \mid m > n + i$ and $m,n,i \geq 0\}$, where $\Sigma = \{a,b,c\}$}
+It should be noted to the grader that I believe the above question has an error. if you observe, we can choose an $m,n,i$ such that $m=n=i=0$. However, then the constraint is broken, as $m \ngtr n+1$.  I will try to answer the question with the modification such that $m \geq n + i$.
  \begin{table}[!htbp]
  \[\begin{array}{ccc} 
 &  \\
- S & \rightarrow & aAbbBbCc \\
- A & \rightarrow & aAb \mid \epsilon \\
- B & \rightarrow & bBb \mid \epsilon \\
- C & \rightarrow & bCc \mid \epsilon 
+ S & \rightarrow & A \\
+ A & \rightarrow & aA \mid bB \mid cC \mid \epsilon \\
+ B & \rightarrow & aBb \mid bBc \mid \epsilon \\
+ C & \rightarrow & cC \mid \epsilon 
  \end{array}\]
  \end{table}
 \subsection{3). $L = \{a^{m}b^{n} \mid 0 \leq n \leq m \leq 3n\}$, where $\Sigma = \{a,b\}$}
  \begin{table}[!htbp]
  \[\begin{array}{ccc} 
 &  \\
- S & \rightarrow & aaAb \\
- A & \rightarrow & aaAb \mid \epsilon 
+ S & \rightarrow & A \mid \epsilon \\
+ A & \rightarrow & aaAb \mid aBb \mid \epsilon \\
+ B & \rightarrow & aBb \mid \epsilon
  \end{array}\]
  \end{table}
 \section{Problem 3}
@@ -272,6 +277,7 @@ Let $G$ be the grammar
 $S \Rightarrow ASB \Rightarrow aASB \Rightarrow aaASB \Rightarrow aa\epsilon SB \Rightarrow aaabB \Rightarrow aaabbB \Rightarrow aaabb\epsilon \Rightarrow aaabb$
 \subsection{2). Give a rightmost derivation of aaabb}
 $S \Rightarrow ASB \Rightarrow ASbB \Rightarrow ASb\epsilon \Rightarrow Aabb \Rightarrow aAabb \Rightarrow aaAabb \Rightarrow aa\epsilon abb \Rightarrow aaabbb$
+\newpage
 \subsection{3). Show that G is ambiguous}
 We can show that G is ambiguous by showing that there are two distinct leftmost derivations for a given string (ex. $aaabb$).  \\
 
