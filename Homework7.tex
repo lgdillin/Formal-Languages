@@ -77,7 +77,7 @@
 % \mathcal{O} 
 %%% big O notation
 
-% \begin{table}
+% \begin{table}[!htbp]
 % \caption{Forward slash.}
 % \[\begin{array}{c|ccccc} 
 % abc/def & 1 & 2 & 3 & 4 & 5\\
@@ -111,9 +111,28 @@ Suppose the PDA $\!P = (\{q, p\}, \{0,1\}, \{Z_0,X\}, \delta, q , Z_0, \{p\})$ h
 \end{enumerate}
 Starting from the initial ID $(q, w, Z_0)$, show all the reachable ID's when the input $w$ is:
 \subsection{a). 01.}
+\begin{figure}[!htbp]
+  	\centering
+   	\begin{subfigure}[p]{0.5\linewidth}
+    	\includegraphics[width=\linewidth]{./figures/h7-1.jpg}
+   	\end{subfigure}
+\end{figure} 
+\newpage
 \subsection{b). 0011.}
+\begin{figure}[!htbp]
+  	\centering
+   	\begin{subfigure}[p]{0.8\linewidth}
+    	\includegraphics[width=\linewidth]{./figures/h7-2.jpg}
+   	\end{subfigure}
+\end{figure} 
+\newpage
 \subsection{c). 010.}
-
+\begin{figure}[!htbp]
+  	\centering
+   	\begin{subfigure}[p]{0.6\linewidth}
+    	\includegraphics[width=\linewidth]{./figures/h7-3.jpg}
+   	\end{subfigure}
+\end{figure} 
 \section{Problem 6.2.1}
 Design a PDA to accept each of the following languages.  You may accept either by final state or by empty stack, whichever is more convenient.  
 \subsection{a). $\{0^{n}1^{n} \mid n \geq 1\}$}
@@ -121,7 +140,7 @@ Design a PDA to accept each of the following languages.  You may accept either b
 \subsection{c). The set of all strings of 0's and 1's with an equal number of 0's and 1's.}
 \section{Problem 6.3.2}
 Convert the grammar to a PDA that accepts the same language by empty stack
- \begin{table}
+ \begin{table}[!htbp]
  \[\begin{array}{ccc} 
  S & \rightarrow & 0S1 \mid A \\
  A & \rightarrow & 1A0 \mid S \mid \epsilon \\
