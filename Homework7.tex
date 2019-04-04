@@ -154,6 +154,17 @@ Let the PDA $\!P = (\{q_0, q_1\}, \{0,1\}, \{Z_0, X\}, \delta, q_0, \{q_1\})$. T
 \end{enumerate}
 \newpage
 \subsection{c). The set of all strings of 0's and 1's with an equal number of 0's and 1's.}
+Let the PDA $\!P = (\{q_0, q_1, q_2\}, \{0,1\}, \{Z_0, X\}, \delta, \{q_0, 1_1\}, \{q_2\})$. Then the rules for $\delta$ are: \\
+\begin{enumerate}
+\item $\delta(q_0, 1, Z_0) = \{(q_0, XZ_0)\}$
+\item $\delta(q_0, 1, X) = \{(q_0, XX)\}$
+\item $\delta(q_0, 0, X) = \{(q_0, \epsilon)\}$
+\item $\delta(q_0, \epsilon, Z_0) = \{(q_2, Z_0)\}$
+\item $\delta(q_1, 0, Z_0) = \{(q_1, XZ_0)\}$
+\item $\delta(q_1, 0, X) = \{(q_1, XX)\}$
+\item $\delta(q_1, 1, X) = \{(q_1, \epsilon)\}$
+\item $\delta(q_1, \epsilon, Z_0) = \{(q_2, Z_0)\}$
+\end{enumerate}
 \section{Problem 6.3.2}
 Convert the grammar to a PDA that accepts the same language by empty stack
  \begin{table}[!htbp]
@@ -162,6 +173,7 @@ Convert the grammar to a PDA that accepts the same language by empty stack
  A & \rightarrow & 1A0 \mid S \mid \epsilon \\
  \end{array}\]
  \end{table}
+I'm inferring that the language of this grammar is the set of strings with equal numbers of zeros and ones, but cannot start and end with the same symbol.
 \section{Problem 6.4.1}
 For each of the following PDA's, tell whether or not it is deterministic.  Either show that it meets the definition of a DPDA or find a rule or rules that violate it.
 \subsection{The PDA of Example 6.2}
