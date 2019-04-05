@@ -186,7 +186,7 @@ For each of the following PDA's, tell whether or not it is deterministic.  Eithe
 \subsection{The PDA of Example 6.2}
 Because the PDA must choose when to move to the next state and process the other half of the string to verify a match, the PDA cannot be deterministic. If it were a DPDA, there would be no choice.
 \subsection{The PDA of Exercise 6.1.1}
-
+Did not have enough time to attempt
 \subsection{The PDA of Exercise 6.3.3}
 The PDA $\!P = (\{q, p\}, \{0,1\}, \{Z_0,X\}, \delta, q , Z_0)$, where  $\delta$ is defined to be:
 \begin{enumerate}
@@ -202,9 +202,29 @@ The PDA $\!P = (\{q, p\}, \{0,1\}, \{Z_0,X\}, \delta, q , Z_0)$, where  $\delta$
 \section{Problem 6.4.2}
 Give deterministic pushdown automata to accept the following languages:
 \subsection{a). $\{0^{n}1^{m} \mid n \leq m\}$}
+$P = (\{q_0, q_1, q_3, q_4\}, \{0,1\}, \{Z_0, X\}, \delta, q_0, \{q_4\})$.
+In this problem, we consider $q_3$ as the dead state, that is, if the stack is empty before all of the 1's are processed, then we goto the deadstate.
+\begin{enumerate}
+\item $\delta(q_0, 0, Z_0) = \{(q_0, XZ_0)\}$
+\item $\delta(q_0, 0, X) = \{(q_0, XX)\}$
+\item $\delta(q_0, 1, X) = \{(q_1, \epsilon)\}$
+\item $\delta(q_1, 1, X) = \{(q_1, \epsilon)\}$
+\item $\delta(q_1, \epsilon, Z_0) = \{(q_3, Z_0)\}$
+\item $\delta(q_1, 1, Z_0) = \{(q_4, Z_0)\}$
+\item $\delta(q_4, 1, Z_0) = \{(q_4, Z_0)\}$
+\end{enumerate}
 \subsection{b). $\{0^{n}1^{m} \mid n \geq m\}$}
+$P = (\{q_0, q_1, q_3\}, \{0,1\}, \{Z_0, X\}, \delta, q_0, \{q_3\})$.
+\begin{enumerate}
+\item $\delta(q_0, 0, Z_0) = \{(q_0, XZ_0)\}$
+\item $\delta(q_0, 0, X) = \{(q_0, XX)\}$
+\item $\delta(q_0, 1, X) = \{(q_1, \epsilon)\}$
+\item $\delta(q_1, 1, X) = \{(q_1, \epsilon)\}$
+\item $\delta(q_1, \epsilon, X) = \{(q_3, \epsilon)\}$
+\item $\delta(q_1, \epsilon, Z_0) = \{(q_3, Z_0)\}$
+\end{enumerate}
 \subsection{c). $\{0^{n}1^{m}0^{n} \mid n$ and $m$ are arbitrary $\}$.}
-$P = (\{q_0, q_1, q_2, q_3\}, \{0,1\}, \{Z_0, X\}, \delta, q_0, \{q_3\}$.
+$P = (\{q_0, q_1, q_2, q_3\}, \{0,1\}, \{Z_0, X\}, \delta, q_0, \{q_3\})$.
 \begin{enumerate}
 \item $\delta(q_0, 0, Z_0) = \{(q_0, XZ_0)\}$
 \item $\delta(q_0, 0, X) = \{(q_0, XX)\}$
