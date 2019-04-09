@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.30)  4 APR 2019 13:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.30)  9 APR 2019 09:41
 entering extended mode
 **./Homework7.tex
 (Homework7.tex
@@ -459,75 +459,43 @@ G,.JBIG2,.JB2,.eps]
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-<./figures/h7-1.jpg, id=1, 2757.30125pt x 2483.2775pt>
-File: ./figures/h7-1.jpg Graphic file (type jpg)
-<use ./figures/h7-1.jpg>
-Package pdftex.def Info: ./figures/h7-1.jpg  used on input line 117.
-(pdftex.def)             Requested size: 209.12683pt x 188.32182pt.
+<./figures/HW7fig1.png, id=1, 116.68594pt x 51.94406pt>
+File: ./figures/HW7fig1.png Graphic file (type png)
+<use ./figures/HW7fig1.png>
+Package pdftex.def Info: ./figures/HW7fig1.png  used on input line 106.
+(pdftex.def)             Requested size: 125.47737pt x 55.86015pt.
+<./figures/HW7fig2.png, id=3, 121.95563pt x 25.59563pt>
+File: ./figures/HW7fig2.png Graphic file (type png)
+<use ./figures/HW7fig2.png>
+Package pdftex.def Info: ./figures/HW7fig2.png  used on input line 122.
+(pdftex.def)             Requested size: 138.02448pt x 28.9684pt.
  [1
 
 {C:/Users/lgdillin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./figure
-s/h7-1.jpg>]
-<./figures/h7-2.jpg, id=13, 2448.14626pt x 3353.52875pt>
-File: ./figures/h7-2.jpg Graphic file (type jpg)
-<use ./figures/h7-2.jpg>
-Package pdftex.def Info: ./figures/h7-2.jpg  used on input line 125.
-(pdftex.def)             Requested size: 334.60422pt x 458.33563pt.
- [2 <./figures/h7-2.jpg>]
-<./figures/h7-3.jpg, id=17, 2928.9425pt x 2438.10875pt>
-File: ./figures/h7-3.jpg Graphic file (type jpg)
-<use ./figures/h7-3.jpg>
-Package pdftex.def Info: ./figures/h7-3.jpg  used on input line 133.
-(pdftex.def)             Requested size: 250.95476pt x 208.89201pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 139--141
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 148--150
-
- []
-
-[3 <./figures/h7-3.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 157--159
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 169--178
-
- []
-
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 200--201
-
- []
-
-[5] [6] (Homework7.aux) ) 
+s/HW7fig1.png> <./figures/HW7fig2.png>] (Homework7.aux) ) 
 Here is how much of TeX's memory you used:
- 5113 strings out of 492946
- 80199 string characters out of 3124934
- 160945 words of memory out of 3000000
- 8935 multiletter control sequences out of 15000+200000
- 9917 words of font info for 36 fonts, out of 3000000 for 9000
+ 5109 strings out of 492946
+ 80134 string characters out of 3124934
+ 157945 words of memory out of 3000000
+ 8931 multiletter control sequences out of 15000+200000
+ 10263 words of font info for 37 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,10n,43p,292b,385s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/lgdillin/AppData/Local/Programs/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/lgdillin/AppData/Local/Progr
-ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/lgdillin/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Use
-rs/lgdillin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-r10.pfb><C:/Users/lgdillin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmr12.pfb><C:/Users/lgdillin/AppData/Local/Programs/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/lgdillin/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/lgdillin/AppData/
-Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/l
-gdillin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10
-.pfb>
-Output written on Homework7.pdf (6 pages, 3459907 bytes).
+ 42i,8n,43p,292b,387s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/lgdillin/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Us
+ers/lgdillin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mmi8.pfb><C:/Users/lgdillin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmr10.pfb><C:/Users/lgdillin/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/lgdillin/AppData/Local/Program
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/lgdillin/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/l
+gdillin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12
+.pfb><C:/Users/lgdillin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb><C:/Users/lgdillin/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on Homework7.pdf (1 page, 101280 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
+ 47 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
