@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.30)  9 APR 2019 13:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.30)  10 APR 2019 12:10
 entering extended mode
 **./Homework8.tex
 (Homework8.tex
@@ -459,43 +459,65 @@ G,.JBIG2,.JB2,.eps]
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-<./figures/HW7fig1.png, id=1, 116.68594pt x 51.94406pt>
-File: ./figures/HW7fig1.png Graphic file (type png)
-<use ./figures/HW7fig1.png>
-Package pdftex.def Info: ./figures/HW7fig1.png  used on input line 106.
+<./figures/HW8fig1.png, id=1, 116.68594pt x 51.94406pt>
+File: ./figures/HW8fig1.png Graphic file (type png)
+<use ./figures/HW8fig1.png>
+Package pdftex.def Info: ./figures/HW8fig1.png  used on input line 106.
 (pdftex.def)             Requested size: 125.47737pt x 55.86015pt.
-<./figures/HW7fig2.png, id=3, 121.95563pt x 25.59563pt>
-File: ./figures/HW7fig2.png Graphic file (type png)
-<use ./figures/HW7fig2.png>
-Package pdftex.def Info: ./figures/HW7fig2.png  used on input line 122.
-(pdftex.def)             Requested size: 138.02448pt x 28.9684pt.
+<./figures/h8-1.jpg, id=3, 3035.34pt x 1350.04375pt>
+File: ./figures/h8-1.jpg Graphic file (type jpg)
+<use ./figures/h8-1.jpg>
+Package pdftex.def Info: ./figures/h8-1.jpg  used on input line 113.
+(pdftex.def)             Requested size: 209.12683pt x 93.00891pt.
+<./figures/h8-2.jpg, id=4, 2969.0925pt x 1361.085pt>
+File: ./figures/h8-2.jpg Graphic file (type jpg)
+<use ./figures/h8-2.jpg>
+Package pdftex.def Info: ./figures/h8-2.jpg  used on input line 120.
+(pdftex.def)             Requested size: 209.12683pt x 95.8672pt.
  [1
 
 {C:/Users/lgdillin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./figure
-s/HW7fig1.png> <./figures/HW7fig2.png>] (Homework8.aux) ) 
+s/HW8fig1.png> <./figures/h8-1.jpg> <./figures/h8-2.jpg>]
+<./figures/h8-3.jpg, id=15, 2969.0925pt x 435.6275pt>
+File: ./figures/h8-3.jpg Graphic file (type jpg)
+<use ./figures/h8-3.jpg>
+Package pdftex.def Info: ./figures/h8-3.jpg  used on input line 128.
+(pdftex.def)             Requested size: 209.12683pt x 30.68315pt.
+<./figures/h8-4.jpg, id=16, 3035.34pt x 2346.7675pt>
+File: ./figures/h8-4.jpg Graphic file (type jpg)
+<use ./figures/h8-4.jpg>
+Package pdftex.def Info: ./figures/h8-4.jpg  used on input line 135.
+(pdftex.def)             Requested size: 209.12683pt x 161.67647pt.
+<./figures/HW8fig2.png, id=17, 121.95563pt x 25.59563pt>
+File: ./figures/HW8fig2.png Graphic file (type png)
+<use ./figures/HW8fig2.png>
+Package pdftex.def Info: ./figures/HW8fig2.png  used on input line 147.
+(pdftex.def)             Requested size: 138.02448pt x 28.9684pt.
+
+[2 <./figures/h8-3.jpg> <./figures/h8-4.jpg> <./figures/HW8fig2.png>]
+(Homework8.aux) ) 
 Here is how much of TeX's memory you used:
- 5109 strings out of 492946
- 80134 string characters out of 3124934
+ 5130 strings out of 492946
+ 80534 string characters out of 3124934
  157945 words of memory out of 3000000
- 8931 multiletter control sequences out of 15000+200000
+ 8947 multiletter control sequences out of 15000+200000
  10263 words of font info for 37 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,8n,43p,292b,387s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/lgdillin/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Us
-ers/lgdillin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mmi8.pfb><C:/Users/lgdillin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmr10.pfb><C:/Users/lgdillin/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/lgdillin/AppData/Local/Program
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/lgdillin/AppDat
-a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/l
-gdillin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12
-.pfb><C:/Users/lgdillin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmsy10.pfb><C:/Users/lgdillin/AppData/Local/Programs/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Homework8.pdf (1 page, 101280 bytes).
+ 42i,10n,43p,292b,387s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/lgdillin/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmmi12.pfb><C:/Users/lgdillin/AppData/Local/Programs/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/lgdillin/AppData/Loca
+l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/lgdill
+in/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><
+C:/Users/lgdillin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmr17.pfb><C:/Users/lgdillin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmr8.pfb><C:/Users/lgdillin/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/lgdillin/AppData/Local/Pr
+ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/lgdillin/
+AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on Homework8.pdf (2 pages, 2393350 bytes).
 PDF statistics:
- 47 PDF objects out of 1000 (max. 8388607)
+ 54 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
