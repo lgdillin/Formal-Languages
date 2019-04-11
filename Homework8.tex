@@ -135,10 +135,26 @@ Repeat Exercise 7.1.2 for the following grammar:
     	\includegraphics[width=\linewidth]{./figures/h8-4.jpg}
    	\end{subfigure}
 \end{figure}
+\newpage
 \section{Problem 7.2.1}
-Use the CFL pumping lemme to show each of these languages not to be \textit{context-free}
-\subsection{a). $\{ a^{i} b{j} c{k} \mid i < j < k \}$}
+Use the CFL pumping lemma to show each of these languages not to be \textit{context-free}
+\subsection{a). $\{ a^{i} b^{j} c^{k} \mid i < j < k \}$}
+Let's break down the cases here and look at candidates for $vwx$:
+\begin{enumerate}
+\item alli n $a$'s
+\item all in $b$'s
+\item all in $c$'s
+\item between $a$'s and $b$'s where $v$ contains both $a$'s and $b$'s
+\item between $a$'s and $b$'s where $x$ contains both $a$'s and $b$'s
+\item between $a$'s and $b$'s where $v$ may contain $a$'s and $x$ may contain $b$'s
+\item between $b$'s and $c$'s where $v$ contains both $b$'s and $c$'s
+\item between $b$'s and $c$'s where $x$ contains both $b$'s and $c$'s
+\item between $b$'s and $c$'s where $v$ may contain $b$'s and $x$ may contain $c$'s
+\end{enumerate}
+For case 1, select a $q$ (because $i$ is already used) to pump $v, x$ by.  Let $q > j$.  Then by pumping $v$ and $x$, we end up with a string such that the length is longer than $j$, and the string is not in $L$.  The same applies for case 2, if we select $q > k$.  For case 3, select $q = 0$, then we transform part of the substring to epsilon.  if $|x|$ is such that $k - |x| < j$, then by "eliminating" $x$ by $x^{0}$, then the string is no longer in $L$. For case 6, if we pick $x = \epsilon$ and pump $v$, we can get an $i \geq j$, which is not in L. The same goes for case 9.  For cases 4 and 7, we can simply pump both $v$ and $x$.  Since the size of the left hand substring (i.e. $i$, or $j$) will be growing faster, then at some point it will violate the rules for L.  For the last cases, 5 and 8, if we select and $x = \epsilon$ and pump like usual, we will find a violation after a certain $i$.
 \subsection{b). $\{ a^{n} b^{n} c^{i} \mid i \leq n \}$}
+This question also contains the cases from the previous question. For cases 1 and 2, we can simply pump the string until it breaks the equality between $|a^{n}|$ and $|b^{n}|$.  For case 3, pump $i$ until it is larger than $n$.  For cases 4 and 7, simply allow $v = \epsilon$ and by pumping $x$ we either violate the length equality between $a$ and $b$, or we pump $c$ such that its length is greater than $n$.  For case 5 since both $v$ and $x$ contain $a$'s, by pumping we break equality.  The same reasoning applies to case 8. for cases 6 and 9, let $v = \epsilon$, and pump $x$, and we will break the conditions on $L$ for both.
+\newpage
 \section{Problem 7.3.2}
 Consider the following two languages:
 \begin{figure}[!htbp]
@@ -159,5 +175,5 @@ Consider the following two languages:
    	\end{subfigure}
 \end{figure} 
 \subsection{b). Is $L_1 \cap L_2$ a CFL? Justify your answer}
-It seems like $L_1 \cap L_2 = \{ \epsilon \}$
+It seems like $L_1 \cap L_2 = \{ a^{n}b^{2nm}c^{2m} \mid n,m \geq 0 \}$.  And yes, because unlike the previous questions, there are no constrains on the substrings in relation (read: context) to one another, such as the length of one substring being greater than another or etc.
 \end{document}
