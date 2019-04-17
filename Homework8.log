@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.30)  11 APR 2019 11:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.30)  17 APR 2019 11:59
 entering extended mode
 **./Homework8.tex
 (Homework8.tex
@@ -459,80 +459,67 @@ G,.JBIG2,.JB2,.eps]
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-<./figures/HW8fig1.png, id=1, 116.68594pt x 51.94406pt>
-File: ./figures/HW8fig1.png Graphic file (type png)
-<use ./figures/HW8fig1.png>
-Package pdftex.def Info: ./figures/HW8fig1.png  used on input line 106.
-(pdftex.def)             Requested size: 125.47737pt x 55.86015pt.
-<./figures/h8-1.jpg, id=3, 3035.34pt x 1350.04375pt>
-File: ./figures/h8-1.jpg Graphic file (type jpg)
-<use ./figures/h8-1.jpg>
-Package pdftex.def Info: ./figures/h8-1.jpg  used on input line 113.
-(pdftex.def)             Requested size: 209.12683pt x 93.00891pt.
-<./figures/h8-2.jpg, id=4, 2969.0925pt x 1361.085pt>
-File: ./figures/h8-2.jpg Graphic file (type jpg)
-<use ./figures/h8-2.jpg>
-Package pdftex.def Info: ./figures/h8-2.jpg  used on input line 120.
-(pdftex.def)             Requested size: 209.12683pt x 95.8672pt.
- [1
+<./figures/HW9fig1.png, id=1, 309.40594pt x 95.6072pt>
+File: ./figures/HW9fig1.png Graphic file (type png)
+<use ./figures/HW9fig1.png>
+Package pdftex.def Info: ./figures/HW9fig1.png  used on input line 105.
+(pdftex.def)             Requested size: 292.77629pt x 90.47618pt.
+
+Overfull \hbox (2.4941pt too wide) in paragraph at lines 120--120
+[]\OT1/cmss/m/n/12 b). $\OML/cmm/m/it/12 \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 q[]
+; \OT1/cmr/m/n/12 0) = (\OML/cmm/m/it/12 q[]; B; R\OT1/cmr/m/n/12 );  \OML/cmm/
+m/it/12 \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 q[]; \OT1/cmr/m/n/12 1) = (\OML/cmm/
+m/it/12 q[]; B; R\OT1/cmr/m/n/12 );  \OML/cmm/m/it/12 \OT1/cmr/m/n/12 (\OML/cm
+m/m/it/12 q[]; \OT1/cmr/m/n/12 1) = (\OML/cmm/m/it/12 q[]; B; R\OT1/cmr/m/n/12 
+);  \OML/cmm/m/it/12 \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 q[]; B\OT1/cmr/m/n/12 )
+ =
+ []
+
+<./figures/HW9fig2.png, id=3, 306.39468pt x 59.47218pt>
+File: ./figures/HW9fig2.png Graphic file (type png)
+<use ./figures/HW9fig2.png>
+Package pdftex.def Info: ./figures/HW9fig2.png  used on input line 127.
+(pdftex.def)             Requested size: 292.77629pt x 56.83218pt.
+
+Overfull \hbox (9.463pt too wide) in paragraph at lines 123--131
+\OT1/cmr/m/n/10 Here is the tran-si-tion func-tion of a non-de-ter-min-is-tic $
+\OML/cmm/m/it/10 M \OT1/cmr/m/n/10 = (\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 q[]; q
+[]; q[]\OMS/cmsy/m/n/10 g\OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 0
+\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1\OMS/cmsy/m/n/10 g\OML/cmm/m/it/10 ; \OMS/c
+msy/m/n/10 f\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1\OML/cmm/m/it/
+10 ; B\OMS/cmsy/m/n/10 g\OML/cmm/m/it/10 ; ; q[]; b; \OMS/cmsy/m/n/10 f\OML/cm
+m/m/it/10 q[]\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 )$:
+ []
+
+[1
 
 {C:/Users/lgdillin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./figure
-s/HW8fig1.png> <./figures/h8-1.jpg> <./figures/h8-2.jpg>]
-<./figures/h8-3.jpg, id=15, 2969.0925pt x 435.6275pt>
-File: ./figures/h8-3.jpg Graphic file (type jpg)
-<use ./figures/h8-3.jpg>
-Package pdftex.def Info: ./figures/h8-3.jpg  used on input line 128.
-(pdftex.def)             Requested size: 209.12683pt x 30.68315pt.
-<./figures/h8-4.jpg, id=16, 3035.34pt x 2346.7675pt>
-File: ./figures/h8-4.jpg Graphic file (type jpg)
-<use ./figures/h8-4.jpg>
-Package pdftex.def Info: ./figures/h8-4.jpg  used on input line 135.
-(pdftex.def)             Requested size: 209.12683pt x 161.67647pt.
-
-[2 <./figures/h8-3.jpg> <./figures/h8-4.jpg>] [3]
-<./figures/HW8fig2.png, id=29, 121.95563pt x 25.59563pt>
-File: ./figures/HW8fig2.png Graphic file (type png)
-<use ./figures/HW8fig2.png>
-Package pdftex.def Info: ./figures/HW8fig2.png  used on input line 163.
-(pdftex.def)             Requested size: 138.02448pt x 28.9684pt.
-<./figures/h8-5.jpg, id=30, 2772.3575pt x 1639.12375pt>
-File: ./figures/h8-5.jpg Graphic file (type jpg)
-<use ./figures/h8-5.jpg>
-Package pdftex.def Info: ./figures/h8-5.jpg  used on input line 170.
-(pdftex.def)             Requested size: 167.2989pt x 98.89342pt.
-<./figures/h8-6.jpg, id=31, 2594.69376pt x 1870.99pt>
-File: ./figures/h8-6.jpg Graphic file (type jpg)
-<use ./figures/h8-6.jpg>
-Package pdftex.def Info: ./figures/h8-6.jpg  used on input line 174.
-(pdftex.def)             Requested size: 167.2989pt x 120.6194pt.
- [4 <./figures/HW8fig2.png> <./figures/h8-5.jpg> <./figures/h8-6.jpg>] (Homewor
-k8.aux) ) 
+s/HW9fig1.png>] [2 <./figures/HW9fig2.png>] (Homework8.aux) ) 
 Here is how much of TeX's memory you used:
- 5140 strings out of 492946
- 80732 string characters out of 3124934
- 160945 words of memory out of 3000000
- 8955 multiletter control sequences out of 15000+200000
- 10263 words of font info for 37 fonts, out of 3000000 for 9000
+ 5107 strings out of 492946
+ 80113 string characters out of 3124934
+ 158945 words of memory out of 3000000
+ 8930 multiletter control sequences out of 15000+200000
+ 9917 words of font info for 36 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,10n,43p,924b,387s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/lgdillin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmmi10.pfb><C:/Users/lgdillin/AppData/Local/Programs/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/lgdillin/AppData/Local/Progr
-ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/lgdillin/AppD
-ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/User
-s/lgdillin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
-10.pfb><C:/Users/lgdillin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmr12.pfb><C:/Users/lgdillin/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/lgdillin/AppData/Local/Programs/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/lgdillin/AppData/L
-ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/lgdi
-llin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pf
-b><C:/Users/lgdillin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmsy10.pfb><C:/Users/lgdillin/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmti10.pfb>
-Output written on Homework8.pdf (4 pages, 3974276 bytes).
+ 42i,10n,43p,292b,387s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/lgdillin
+/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C
+:/Users/lgdillin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmmi12.pfb><C:/Users/lgdillin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmmi7.pfb><C:/Users/lgdillin/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/lgdillin/AppData/Local/Pr
+ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/lgdillin/A
+ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/U
+sers/lgdillin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmr17.pfb><C:/Users/lgdillin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmr7.pfb><C:/Users/lgdillin/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/lgdillin/AppData/Local/Programs
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/lgdillin/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on Homework8.pdf (2 pages, 121726 bytes).
 PDF statistics:
- 74 PDF objects out of 1000 (max. 8388607)
+ 58 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
