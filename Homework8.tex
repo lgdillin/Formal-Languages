@@ -107,18 +107,48 @@
 \end{figure} 
 Show the ID's of the Turning Machine of Fig. 8.9 if the input tape contains:
 \subsection{a). 00}
+$B q_0 0 0 B \vdash B X q_1 0 B \vdash B X 0 q_1 B$
+The machine then halts because the next move is undefined
 \subsection{b). 000111}
+$B q_0 0 0 0 1 1 1 B \vdash B X q_1 0 0 1 1 1 B \vdash B X 0 q_1 0 1 1 1 B \vdash B X 0 0 q_1 1 1 1 B \vdash B X 0 q_2 0 Y 1 1 B \vdash B X q_2 0 0 Y 1 1 B \vdash B q_2 X 0 0 Y 1 1 B 
+\vdash B X q_0 0 0 Y 1 1 B \vdash B X X q_1 0 Y 1 1 B \vdash B X X 0 q_1 Y 1 1 B \vdash B X X 0 Y q_1 1 1 B \vdash B X X 0 q_2 Y Y 1 B \vdash B X X q_2 0 Y Y 1 B \vdash B X q_2 X 0 Y Y 1 B 
+\vdash B X X q_0 0 Y Y 1 B \vdash  B X X X q_1 Y Y 1 B \vdash B X X X Y q_1 Y 1 B \vdash B X X X Y Y q_1 1 B \vdash B X X X Y q_2 Y Y B \vdash B X X X q_2 Y Y Y B 
+\vdash B X X q_2 X Y Y Y B \vdash B X X X q_0 Y Y Y B \vdash B X X X Y q_3 Y Y B \vdash B X X X Y Y q_3 Y B \vdash B X X X Y Y Y q_3 B \vdash B X X X Y Y Y B q_4 B$
 \subsection{c). 00111}
+$B q_0 0 0 1 1 1 B \vdash B X q_1 0 1 1 1 B \vdash B X 0 q_1 1 1 1 B \vdash B X q_2 0 Y 1 1 B \vdash B q_2 X 0 Y 1 1 B \vdash B X q_0 Y 1 1 B \vdash B X X q_1 Y 1 1 B \vdash B X X Y q_1 1 1 B \vdash B X X q_2 Y Y 1 B \vdash B X q_2 X Y Y 1 B \vdash B X X q_0 Y Y 1 B \vdash B X X Y q_3 Y 1 B \vdash B X X Y Y q_3 1 B$\\
+The machine then halts because the next move is undefined
+\newpage
 \section{Problem 8.2.2}
 Design Turing machines for the following languages:
 \subsection{c). $\{ww^{R} \mid w $ is any string of 0's and 1's $\}$}
+$$M = ( \{q_0, q_1, q_2, q_3, q_4, q_5, q_f\}, \{0,1\}, \{0,1,B\}, \delta, q_0, B, \{q_f\})$$
+\begin{enumerate}
+\item $\delta(q_0, 0) = (q_1, B, R)$
+\item $\delta(q_0, 1) = (q_f, B, R)$
+\item $\delta(q_0, B) = (q_6, B, R)$
+\item $\delta(q_1, 0) = (q_1, 0, R)$
+\item $\delta(q_1, 1) = (q_1, 1, R)$
+\item $\delta(q_1, B) = (q_3, B, L)$
+\item $\delta(q_2, 0) = (q_2, 0, R)$
+\item $\delta(q_2, 1) = (q_2, 1, R)$
+\item $\delta(q_2, B) = (q_4, B, R)$
+\item $\delta(q_3, 0) = (q_5, B, L)$
+\item $\delta(q_4, 1) = (q_5, B, L)$
+\item $\delta(q_5, 0) = (q_5, 0, L)$
+\item $\delta(q_5, 1) = (q_5, 1, L)$
+\item $\delta(q_5, B) = (q_0, B, R)$
+\end{enumerate}
+\newpage
 \section{Problem 8.2.5}
 Consider the Turing Machine
 $$M = ( \{q_0, q_1, q_2, q_f\}, \{0,1\}, \{0,1,B\}, \delta, q_0, B, \{q_f\})$$
 Informally, but clearly describe the language $L(M)$ if $\delta$ consists of the following set of rules:
 \subsection{a). $\delta(q_0, 0) = (q_1, 1, R); \ \delta(q_1, 1) = (q_0, 0, R); \ \delta(q_1, B) = (q_f, B, R)$}
+it accepts strings like this: 0101010, that is, strings that start with 0, end with 1, and alternate between 0 and 1 every symbol
 \subsection{b). $\delta(q_0, 0) = (q_0, B, R); \ \delta(q_0, 1) = (q_1, B, R); \ \delta(q_1, 1) = (q_1, B, R); \ \delta(q_1, B) = (q_f, B, R)$}
+Strings of any length that end with a 1
 \subsection{c). $\delta(q_0, 0) = (q_1, 1, R); \ \delta(q_1, 1) = (q_2, 0, L); \ \delta(q_2, 1) = (q_0, 1, R); \ \delta(q_1, B) = (q_f, B, R)$}
+Strings that start with a 0, end with a 1, and alternate between 0 and 1
 \section{Problem 8.4.2}
 Here is the transition function of a nondeterministic $M = (\{q_0, q_1, q_2\}, \{0,1\}, \{0,1,B\}, \delta, q_0, b, \{q_2\})$:
 \begin{figure}[!htbp]
@@ -129,5 +159,7 @@ Here is the transition function of a nondeterministic $M = (\{q_0, q_1, q_2\}, \
 \end{figure} 
 Show the ID's reachable from the initial ID if the input is:
 \subsection{a). 01}
+$\{(q_0, 1, R)\} \vdash \{(q_1, 0, r)\} \vdash \{(q_2, B, R)\}$
 \subsection{b). 011}
+$\{(q_0, 1, R)\} \vdash \{(q_1, 0, r)\} \vdash \{(q_1, 1, R), (q_0, 1, L)\} \vdash \{(q_2, B, R) \} \cup \{(q_0, 1, R)\}$
 \end{document}
