@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.24)  18 APR 2019 14:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.24)  18 APR 2019 14:58
 entering extended mode
 **./Homework9.tex
 (Homework9.tex
@@ -301,7 +301,7 @@ Package tocloft Info: The document has section divisions on input line 51.
 LaTeX Warning: Unused global option(s):
     [20pt].
 
-No file Homework9.aux.
+(Homework9.aux)
 \openout1 = `Homework9.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 98.
@@ -316,6 +316,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 98.
 LaTeX Font Info:    ... okay on input line 98.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 98.
 LaTeX Font Info:    ... okay on input line 98.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -495,8 +496,8 @@ m/m/it/10 q[]\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 )$:
 
 [3 <./figures/HW9fig2.png>] (Homework9.aux) ) 
 Here is how much of TeX's memory you used:
- 5108 strings out of 492970
- 75676 string characters out of 3143381
+ 5110 strings out of 492970
+ 75751 string characters out of 3143381
  158472 words of memory out of 3000000
  8909 multiletter control sequences out of 15000+200000
  9917 words of font info for 36 fonts, out of 3000000 for 9000
@@ -510,7 +511,7 @@ miketex/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/miketex/fonts/type1/public
 /amsfonts/cm/cmr17.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/cmr7.pfb><E:/
 miketex/fonts/type1/public/amsfonts/cm/cmr8.pfb><E:/miketex/fonts/type1/public/
 amsfonts/cm/cmss12.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Homework9.pdf (3 pages, 129653 bytes).
+Output written on Homework9.pdf (3 pages, 129436 bytes).
 PDF statistics:
  61 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
