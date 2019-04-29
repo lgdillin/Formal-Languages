@@ -128,35 +128,11 @@ $A(0,1) = 1$. Now substitute \\
 $A(1,1) = A(0+1, 0+1) = A(A(0, 1),0) = A(1,0) = 2$. And substituting again, \\
 $A(2,1) = A(1+1, 0+1) = A(A(1, 0+1), 0) = A(A(1,1), 0) = A(2, 0) = x+2 = 4$
 \subsection{b). What function of $x$ is $A(x,2)$?}
+After running a python script I wrote, I got the answers for the following input: \\
+$A(0,1) = 1; A(1,1) = 2; A(2,1) = 4; A(3,1) = 6; A(4,1) = 8$.  In addition, the value of $y$ does not affect the output of the function, it merely adds unneccesary complexity.  By observation, we can see that the only variable in the entire rules list is $x$.  Everything else is a constant.  Thus the function of $x$ is $2x$.
 \subsection{c). Evaluate $A(4,3)$}
-$A(4,3) = A(3+1,2+1) = A(A(3,2+1), 2)$ \\
-$A(3, 2+1) = A(3, 3) = A(2+1, 2+1) = A(A(2, 2+1), 2)$** \\
-$A(2, 2+1) = A(2,3) = A(1+1, 2+1) = A(A(1, 2+1), 2)$ \\
-$A(1, 2+1) = A(1,3) = A(0+1, 2+1) = A(A(0, 2+1), 2)$*\\
-$A(0, 2+1) = A(0,3) = 1$.  Now we subtitute backwards. \\
-$A(A(0, 2+1), 2) = A(A(0,3),2) = A(1,2)$. \\
-$A(1,2) = A(0+1, 1+1) = A(A(0, 1+1), 1)$ \\
-$A(0, 1+1) = A(0,2) = 1$. Subtitute back. \\
-$A(1,2) = A(A(0,2), 1) = A(1,1)$. Using results derived from previous questions, $A(1,1) = 2 = A(1,2)$.  Substitute back starting at line *.\\
-$A(1,3) = A(A(0, 3), 2) = A(1,2) = 2$ \\
-$A(2,3) = A(A(1,3),2) = A(2,2)$ \\
-$A(2,2) = A(1+1, 1+1) = A(A(1, 1+1), 1)$ \\
-$A(1, 1+1) = A(1,2) = 2$. subtitute \\
-$A(2,2) = A(2, 1) = 4$. (From previous question). Now substitute back to **.
-$A(3,3) = A(A(2,3), 2).$ Since $A(2,2) = A(2,3) = 4$, then $A(3,3) = A(4, 2)$. \\
-$A(4,2) = A(3+1, 1+1) = A(A(3, 1+1), 1)$ \\
-$A(3, 1+1) = A(3, 2) = A(2+1, 1+1) = A(A(2, 1+1), 1)$ \\
-$A(2, 1+1) = A(2,2) = 4$. substitute \\
-$A(3,2) = A(4, 1).$\\
-
-I want to say that at this point I got tired of doing the calculations by hand, so I wrote a python script which computes the Ackermann function.  However, there seemed to be some sort of recursion error with the code at $A(4,3)$ so I computed it for $A(4,1)$ and got 8.
-
-$A(4,1)=8$. Substitute back \\
-$A(4,2) = A(A(3,2), 1) = A(8, 1)$. Using our script, we get $A(8,1) =16$. So $A(4,2) = A(8,1) = 16 = A(3,3)$. \\
-$A(4,3) = A(16, 2)$ \\
-$A(16, 2) =  A(15 + 1, 1 + 1) = A(A(15, 1+1), 1)$
-
-The python code is shown below:
+\textit{Note to grader:} I initially computed this by hand for some time, but after deriving the truth of the function, it is as simple as plugging in the $x$ value\\
+Using the derived function of $x$ from the previous question, $A(4,3) = 8$
 \begin{lstlisting}[language=python]
 import sys
 sys.setrecursionlimit(8000)

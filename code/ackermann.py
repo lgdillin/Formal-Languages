@@ -24,5 +24,5 @@ def A(x, y):
 
     raise Exception('Something terrible happened!')
 
-x = A(15, 2)
+x = A(2, 6)
 print(x)
