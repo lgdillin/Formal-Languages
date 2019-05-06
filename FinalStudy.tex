@@ -137,6 +137,17 @@ For $\epsilon$\textit{-NFA}, we explicitly define transitions for $\epsilon$, i.
 For the precise definition, we have: 
 $$\text{basis: } \hat{\delta}(q, \epsilon) = \text{\textbf{ECLOSE($q$)}. } \ \hat{\delta}(q,w) = \hat{\delta}(q, xa) = \text{\textbf{ECLOSE}} \Bigg( \bigcup_{p \in \hat{\delta}(q,x)}\delta(p,a) \Bigg)$$
 The language described by an $\epsilon$\textit{-NFA}, $A$, is defined as: $A = \{ w \mid \hat{\delta}(q_0, w) \cap F \neq \emptyset \}$.
+\subsection{Regular Expressions}
+\subsubsection{Operators}
+\paragraph{Union:} if $L = \{001,10,11\}$ and $M = \{$
+\subsection{Properties of Regular Languages}
+\subsubsection{The Pumping Lemma}
+\paragraph{The pumping lemma for regular languages}  Let $L$ be a regular language. Then there exists a constant $n$ (which depends on $L$) such that for every string $w$ in $L$ such that $|w| \geq n$, we can break $w$ into three strings, $w = xyz$ such that:
+\begin{enumerate}
+\item $y \neq \epsilon$
+\item $|xy| \leq n$
+\item For all $k \geq 0$, the string $xy^{k}z$ is also in $L$
+\end{enumerate}
 \end{document}
 
 
