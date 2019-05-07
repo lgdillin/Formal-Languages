@@ -284,7 +284,8 @@ When $G_k = G_{k+1}, G_k$ is the set of all variables that is generating.  Get r
 \end{itemize}
 When $S_k = S_{k+1}, S_k$ is the set of variables reachable from $S$.
 \subsection{Church-Turing Thesis}
-"The unprovable assumption that any general way to compute will allow us to compute only the partial-recursive functions (or equivalently, what Turing machines or modern-day computers can compute) is known as \textit{Church's hypothesis}
+"The unprovable assumption that any general way to compute will allow us to compute only the partial-recursive functions (or equivalently, what Turing machines or modern-day computers can compute) is known as \textit{Church's hypothesis}\\
+The \textit{Church Turing Thesis} shows that if a TM always halts then it is a rec. lang.  If it only halts on accept then it is rec. enum.  (tentative)
 \subsection{Turing machines}
 \subsubsection{Definition of Turing machine}
 \begin{itemize}
@@ -294,10 +295,26 @@ When $S_k = S_{k+1}, S_k$ is the set of variables reachable from $S$.
 \subsubsection{Languages of Turing Machines}
 $L = \{ q_0 w \vdash^{*} \alpha_1q_f\alpha_2, \ \alpha_1, \alpha_2 \in \Gamma^{*}, \ q_f \in F \}$
 \paragraph{Closure of Languages: } regular $\subset$ CFL $\subset$ CSL $\subset$ recursive $\subset$ rec. enum. $\subset$ non-rec. enum
-\paragraph{Recursively Enumerable Language:} A language which accepts on halting
-\paragraph{Diagonalization Language ($L_d$)}
-\paragraph{Universal Language ($L_u$)}
-\paragraph{}
+\paragraph{Recursive and Recursively Enumerable Languages} A language which accepts on halting
+\subsection{Diagonalization Language ($L_d$)}
+The language $L_d$ the \textit{diagonalization language}, is the set of strings $w_i$ such that $w_i$ is not in $L(M_i)$.  That is, $L_d = \{ w_i \mid w_i \notin L(M_i)$ where $w_i = \textless M_i \textgreater \}$.  Note that $L_d$ is not recursively enumerable.
+\subsection{Universal Language ($L_u$)}
+$L_u = \{ (M, w) \mid w \in L(M)\}$ Where $M$ is a TM of the binary alphabet which accepts $w$. $U$ is a \textit{universal} TM such that: $L(U) = \{ (M,w) \mid \textless M \textgreater 111 w$ is accepted by $U \}$, and $L(U) = L_u$.
+\subsection{$L_e$ and $L_{ne}$}
+dont' know yet
+\subsection{Decidable or Undecidable Problems}
+A preview of \textbf{Undecidable CFL} problems:
+\begin{enumerate}
+\item is a given CFG $G$ ambiguous?
+\item is a given CFL inherently ambiguous?
+\item is the intersection of two CFL's empty?
+\item are two CFL's the same?
+\item is a given CFL equal to $\Sigma^{*}$, where $\Sigma$ is the alphabet of this language?
+\end{enumerate}
+\subsection{The Halting Problem}
+The halting problem is an issue of decidability
+\subsection{Halting Language ($L_H$)}
+$L_H$ is the set of languages which halt.  this is why the halting problem is recursively enumerable, because the language itselfs is TMs which halt on their own encoding.  since a rec. enum. language always halts on accept, and the language is the set of TM's who halt on their own encoding, then $L_H$ is rec. enum.
 \end{document}
 
 
