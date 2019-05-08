@@ -148,7 +148,7 @@ $q \equiv p \Leftrightarrow \forall w \in \Sigma^{*}, \hat{\delta}(q,w), \hat{\d
 \item $|xy| \leq n$
 \item For all $k \geq 0$, the string $xy^{k}z$ is also in $L$
 \end{enumerate}
-That is, we can always find  a nonempty strings $y$ not too far from the beginning of $w$ that can be "pumped"; that is, repeating $y$ any number of times, or deleting it (case $k=0$), keeps the string in the language $L$.  If the string stays in the language $L$, then $L$ is \textbf{not regular}.
+That is, we can always find  a nonempty strings $y$ not too far from the beginning of $w$ that can be "pumped"; that is, repeating $y$ any number of times, or deleting it (case $k=0$), keeps the string in the language $L$.  If the string stays in the language $L$, then $L$ is \textbf{regular}.
 \newpage
 \subsection{Grammars}
 \subsubsection{General Grammar Defintion}
@@ -315,6 +315,90 @@ A preview of \textbf{Undecidable CFL} problems:
 The halting problem is an issue of decidability
 \subsection{Halting Language ($L_H$)}
 $L_H$ is the set of languages which halt.  this is why the halting problem is recursively enumerable, because the language itselfs is TMs which halt on their own encoding.  since a rec. enum. language always halts on accept, and the language is the set of TM's who halt on their own encoding, then $L_H$ is rec. enum.
+
+\newpage
+\section{Algorithms}
+\subsection{\textit{reduce} DFA states (e.g. convert to \textbf{regular expression}}
+Remember to add $^{*}$ to loops.  Union multiple loops with $+$
+\begin{figure}[!htbp]
+  	\centering
+   	\begin{subfigure}[p]{0.5\linewidth}
+    	\includegraphics[width=\linewidth]{./figures/f-1.jpg}
+   	\end{subfigure}
+\end{figure}
+\subsection{Simplification of CFG}
+Simplification consists of the following steps:
+\begin{enumerate}
+\item Reduction of CFG
+\item Removal of \textbf{Unit Productions}
+\item Removal of \textbf{Null Productions}
+\end{enumerate}
+\subsubsection{Reduction of CFG}
+\underline{Phase 1}: Derivation of an equivalent Grammar $G'$, from the CFG G, such that each variable derives some terminal string\\
+\underline{Derivation procedure:}
+\begin{enumerate}
+\item \textbf{Step 1:} Include all symbols $w_1$ that derives some terminal an initialize $i = 1$
+\item \textbf{Step 2:} Include symbols $w_{i+1}$ that derives $w_i$
+\item \textbf{Step 3:} Increment $i$ and repeat \textbf{Step 2}, until $w_{i+1} = w_i$
+\item \textbf{Step 4:} Include all production rules that have $w_i$ in it
+\end{enumerate} 
+\underline{Phase 2:} Derivation of an equivalent Grammar $G''$, from the CFG, $G'$ such that each symbol appears in a sentential form\\
+\underline{Derivation procedure:}
+\begin{enumerate}
+\item \textbf{Step 1:} Include the Start Symbol in $y_1$ and initialize $i = 1$
+\item \textbf{Step 2:} Include all symbols $y_{i+1}$, that can be derived from $y_i$ and include all production rules that have been applied
+\item \textbf{Step 3:} Increment $i$ and repeat Step 2, until $y_{i+1} = y_i$
+\end{enumerate}
+Given below is an example of a CFG with production rules $P$:
+\begin{figure}[!htbp]
+  	\centering
+   	\begin{subfigure}[p]{1.0\linewidth}
+    	\includegraphics[width=\linewidth]{./figures/f-2.jpg}
+   	\end{subfigure}
+\end{figure}
+\subsubsection{Removal of \textbf{Unit productions}}
+Any production rule of the form $A \rightarrow B$, where $A, B \in$ Non Terminals is called a \textbf{Unit Production}\\
+\underline{Procedure for removal:}
+\begin{enumerate}
+\item \textbf{Step 1:} To remove $A\rightarrow B$, add production $A \rightarrow x$ to the grammar rule whenever $B \rightarrow x$ occurs in the grammar. ($x \in $ Terminal, $x$ can be Null)
+\item \textbf{Step 2:} Delete $A \rightarrow B$ from the grammar
+\item \textbf{Step 3:} Repeat Step 1 until all \textbf{Unit Productions} are removed
+\end{enumerate} 
+\begin{figure}[!htbp]
+  	\centering
+   	\begin{subfigure}[p]{1.0\linewidth}
+    	\includegraphics[width=\linewidth]{./figures/f-3.jpg}
+   	\end{subfigure}
+\end{figure}
+\subsubsection{Removal of \textbf{Null Productions}}
+In a CFG, a Non-Terminal Symbol $A$ is a nullable variable if there is a production $A \rightarrow \epsilon$ or there is a derivation that starts at $A$ and leads to $\epsilon$ (Like $A \rightarrow^{*} \epsilon$)
+\underline{Procedure for removal:}
+\begin{enumerate}
+\item \textbf{Step 1:} To remove $A \rightarrow \epsilon$, look for all productions whose right side contains $A$
+\item \textbf{Step 2:} Replace each occurences of $A$ in each of these productions with $\epsilon$
+\item \textbf{Step 3:} Add the resultant productions to the Grammar
+\end{enumerate}
+\begin{figure}[!htbp]
+  	\centering
+   	\begin{subfigure}[p]{1.0\linewidth}
+    	\includegraphics[width=\linewidth]{./figures/f-4.jpg}
+   	\end{subfigure}
+\end{figure}
+\subsubsection{CFG to CNF conversion}
+In CNF we have a restriction on the length of the RHS, which is; \textit{elements in RHS should either be \textbf{two variables} or a \textbf{Terminal}}.  A CFG is in CNF if the productions are in the following forms:
+\begin{itemize}
+\item $A \rightarrow a$
+\item $A \rightarrow BC$
+\end{itemize}
+where $A$, $B$, and $C$ are non-terminals and $a$ is a terminal.\\
+\underline{Steps to convert a given CFG to CNF:}
+\begin{enumerate}
+\item \textbf{Step 1:} If the start symbol $S$ occurs on the RHS, create a new start symbol $S'$ and add a new production rule $S' \rightarrow S$
+\item \textbf{Step 2:} Remove Null productions
+\item \textbf{Step 3:} Remove Unit productions
+\item \textbf{Step 4:} Replace each production $A \rightarrow B_1, ... , B_n$ where $n > 2$ with $A \rightarrow B_1 C$ where $C \rightarrow B_2, ... , B_n$. Repeat this step for all productions having two or more symbols on the right side.
+\item \textbf{Step 5:} If the \textbf{RHS} of any production is in the form $A \rightarrow aB$ where $a$ is a terminal and $A$ and $B$ are non-terminals, then the production is replaced by $A \rightarrow XB$ and $X \rightarrow a$.  Repeat this step for every production which is of the form $A \rightarrow aB$.
+\end{enumerate}
 \end{document}
 
 
